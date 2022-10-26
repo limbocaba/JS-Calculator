@@ -1,3 +1,7 @@
+let display = document.getElementById('display')
+
+let buttons = document.getElementsByClassName('button')
+
 let add = (num1, num2) => {
   let sum = num1 + num2
   return sum

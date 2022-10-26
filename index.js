@@ -1,6 +1,16 @@
 let display = document.getElementById('display')
 
-let buttons = document.getElementsByClassName('button')
+let buttons = Array.from(document.getElementsByClassName('button'));
+
+buttons.map(button => {
+  button.addEventListener('click', (e) => {
+    switch (e.target.innerText) {
+      default:
+        display.innerText += e.target.innerText
+   }
+  })
+})
+
 
 let add = (num1, num2) => {
   let sum = num1 + num2
